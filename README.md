@@ -24,9 +24,14 @@ URL FINAL:
 * -REACT
 * -NEXTJS
 * -TailwindCSS
+* -NEXTUI
+* -REACT ICONS
+* -FRAMER MOTION
 * -Deploy Frontend: https://www.netlify.com/
 
 
 
 ## 3. Descripción del proyecto
 Se desarrollo un portafolio donde se detalla los conocimientos y habilidades que cuento.
+* -Menu principal construido con NEXTUI y TailwindCSS
+* -Banner del home con TailwindCSS y FRAMER MOTION

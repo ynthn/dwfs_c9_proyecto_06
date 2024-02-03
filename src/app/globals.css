@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
+
+/**
+*HEADER
+*/
+.bg-header{
+    background-color: #0a314a;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.header ul li a{
+    font-size: 18px !important;
+    text-transform: uppercase !important;
+}
+
+
+
+
+.bg-footer{
+    background-color: #0a314a;
+}
