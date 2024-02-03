@@ -3,22 +3,37 @@ import React from "react";
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem, Button, NavbarMenuToggle, NavbarMenu, NavbarMenuItem } from "@nextui-org/react";
 import Image from "next/image";
 import Link from "next/link";
+import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
+
 
 const NavBar = () => {
 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const menuItems = [
-    "Inicio",
-    "Sobre Mi",
-    "Proyectos",
-    "Contacto"
-  ];
 
+  /**
+   * TO SCROLL CONTACT
+   */
+  const scrollToContact = () => {
+    scroll.scrollToBottom();
+    setIsMenuOpen(false);
+  };
+
+  /**
+   * CLOSED MENU MOBILE
+   */
+  const handleMenuItemClick = () => {
+    setIsMenuOpen(false);
+  };
 
 
   return (
     <header className="header">
-      <Navbar onMenuOpenChange={setIsMenuOpen} className="bg-header">
+      <Navbar
+        isBordered
+        isMenuOpen={isMenuOpen}
+        onMenuOpenChange={setIsMenuOpen}
+        className="bg-header"
+      >
         <NavbarContent>
           <NavbarBrand>
             <Link href="/">
@@ -29,22 +44,22 @@ const NavBar = () => {
 
         <NavbarContent className="hidden sm:flex gap-4" justify="end">
           <NavbarItem>
-            <Link color="foreground" href="/" className="text-white hover:text-cyan-300">
+            <Link color="foreground" href="/" className="text-white hover:text-emerald-500">
               Inicio
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground"  href="about" className="text-white hover:text-cyan-300">
+            <Link color="foreground" href="about" className="text-white hover:text-emerald-500">
               Sobre Mi
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="projects" className="text-white hover:text-cyan-300">
+            <Link color="foreground" href="projects" className="text-white hover:text-emerald-500">
               Proyectos
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="contact" className="text-white hover:text-cyan-300">
+            <Link color="foreground" href="#" onClick={scrollToContact} className="text-white hover:text-emerald-500">
               Contacto
             </Link>
           </NavbarItem>
@@ -62,23 +77,53 @@ const NavBar = () => {
 
 
         <NavbarMenu className="z-50 mt-10">
-          {menuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color={
-                  index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
-                }
-                className="w-full"
-                href="#"
-                size="lg"
-              >
-                {item}
-              </Link>
-            </NavbarMenuItem>
-          ))}
+          <NavbarMenuItem>
+            <Link
+              color="white"
+              className="w-full"
+              href="/"
+              size="lg"
+              onClick={handleMenuItemClick}
+            >
+              Inicio
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link
+              color="white"
+              className="w-full"
+              href="/about"
+              size="lg"
+              onClick={handleMenuItemClick}
+            >
+              Sobre Mi
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link
+              color="white"
+              className="w-full"
+              href="/projects"
+              size="lg"
+              onClick={handleMenuItemClick}
+            >
+              Proyectos
+            </Link>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Link
+              color="white"
+              className="w-full"
+              href="#"
+              size="lg"
+              onClick={scrollToContact}
+            >
+              Contacto
+            </Link>
+          </NavbarMenuItem>
         </NavbarMenu>
       </Navbar>
-    </header>
+    </header >
   )
 }
 
