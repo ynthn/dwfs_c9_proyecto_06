@@ -9,12 +9,14 @@
 /**
 *HEADER
 */
-.bg-header{
+.bg-header {
     background-color: #0a314a;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.header ul li a{
+
+.header ul li a,
+.header ul li button {
     font-size: 17px !important;
     text-transform: uppercase !important;
 }
@@ -22,6 +24,6 @@
 
 
 
-.bg-footer{
+.bg-footer {
     background-color: #0a314a;
 }

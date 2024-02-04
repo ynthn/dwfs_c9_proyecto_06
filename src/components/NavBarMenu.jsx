@@ -38,9 +38,9 @@ const NavBarMenu = () => {
           <NavbarBrand>
             <Link href="/">
               <Image
-                src="/logo.png" 
-                width={200} 
-                height={53} 
+                src="/logo.png"
+                width={200}
+                height={53}
                 alt="Yonathan Muñoz Bravo"
                 priority="true"
               />
@@ -65,9 +65,9 @@ const NavBarMenu = () => {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#" passHref={true} onClick={scrollToContact} className="text-white hover:text-emerald-500">
+            <button onClick={scrollToContact} className="text-white hover:text-emerald-500">
               Contacto
-            </Link>
+            </button>
           </NavbarItem>
 
 
@@ -117,16 +117,13 @@ const NavBarMenu = () => {
             </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Link
+            <button
               color="white"
-              className="w-full"
-              href="#" 
-              passHref={true}
+              className="w-full text-left"
               size="lg"
               onClick={scrollToContact}
-            >
-              Contacto
-            </Link>
+            >Contacto</button>
+
           </NavbarMenuItem>
         </NavbarMenu>
       </Navbar>
