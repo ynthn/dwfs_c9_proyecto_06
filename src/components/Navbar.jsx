@@ -37,7 +37,13 @@ const NavBar = () => {
         <NavbarContent>
           <NavbarBrand>
             <Link href="/">
-              <Image src="/logo.png" width={200} height={50} alt="Yonathan Muñoz Bravo"></Image>
+              <Image
+                src="/logo.png" 
+                width={200} 
+                height={53} 
+                alt="Yonathan Muñoz Bravo"
+                priority="true"
+              />
             </Link>
           </NavbarBrand>
         </NavbarContent>

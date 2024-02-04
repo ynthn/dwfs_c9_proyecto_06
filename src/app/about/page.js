@@ -60,8 +60,8 @@ const Page = () => {
 
 
 
-    <div className='container'>
-      <div class="bg-white py-24 sm:py-32 md:columns-2 sm:columns-1">
+    <div className='container mx-auto'>
+      <div className="bg-white py-24 sm:py-30 md:columns-2 sm:columns-1">
 
 
         <motion.div
@@ -70,10 +70,10 @@ const Page = () => {
           transition={{ duration: 0.5 }}
         >
 
-          <div class="mx-auto max-w-7xl px-6 mb-20 lg:px-8">
-            <div class="mx-auto max-w-2xl lg:text-center">
-              <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sobre mi</p>
-              <p class="mt-6 text-lg leading-8 text-gray-600">¡Bienvenido a mi espacio digital! Soy un apasionado Desarrollador Web Full Stack. Mi enfoque abarca tanto el desarrollo del lado del cliente como del servidor, lo que me permite diseñar y construir soluciones web completas y efectivas.</p>
+          <div className="mx-auto max-w-7xl px-6 mb-20 lg:px-8">
+            <div className="mx-auto max-w-2xl lg:text-center">
+              <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Sobre mi</p>
+              <p className="mt-6 text-lg leading-8 text-gray-600">¡Bienvenido a mi espacio digital! Soy un apasionado Desarrollador Web Full Stack. Mi enfoque abarca tanto el desarrollo del lado del cliente como del servidor, lo que me permite diseñar y construir soluciones web completas y efectivas.</p>
             </div>
           </div>
 
@@ -89,10 +89,10 @@ const Page = () => {
           transition={{ duration: 0.5 }}
         >
 
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
 
-          <div class="mx-auto max-w-2xl lg:text-center">
-            <p class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Mis Habilidades</p>
+          <div className="mx-auto max-w-2xl lg:text-center">
+            <p className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Mis Habilidades</p>
           </div>
 
 

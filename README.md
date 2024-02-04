@@ -22,7 +22,7 @@ URL FINAL:
 * -HTML 5
 * -CSS
 * -REACT
-* -NEXTJS
+* -NEXTJS (Framework de REACT)
 * -TailwindCSS
 * -NEXTUI
 * -REACT ICONS
@@ -33,5 +33,7 @@ URL FINAL:
 
 ## 3. Descripción del proyecto
 Se desarrollo un portafolio donde se detalla los conocimientos y habilidades que cuento.
-* -Menu principal construido con NEXTUI y TailwindCSS
-* -Banner del home con TailwindCSS y FRAMER MOTION
+* -Menu principal: Construido con NEXTUI y TailwindCSS
+* -Banner del home: Uso de TailwindCSS y FRAMER MOTION
+* -Sobre mi: Uso de TailwindCSS y FRAMER MOTION
+* -Proyectos: Uso de TailwindCSS, NextUI y FRAMER MOTION
