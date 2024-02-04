@@ -6,7 +6,7 @@ import Link from "next/link";
 import { Link as ScrollLink, animateScroll as scroll } from 'react-scroll';
 
 
-const NavBar = () => {
+const NavBarMenu = () => {
 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
@@ -133,4 +133,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar
+export default NavBarMenu

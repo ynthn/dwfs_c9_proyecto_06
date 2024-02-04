@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/NavBar";
+import NavBarMenu from "@/components/NavBarMenu";
 import Footer from "@/components/Footer";
 import Providers from "@/components/Providers";
 
@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
 
 
         <Providers>
-          <NavBar></NavBar>
+          <NavBarMenu></NavBarMenu>
           {children}
           <Footer></Footer>
         </Providers>
