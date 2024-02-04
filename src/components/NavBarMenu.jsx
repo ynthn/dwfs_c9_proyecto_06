@@ -65,7 +65,7 @@ const NavBarMenu = () => {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#" onClick={scrollToContact} className="text-white hover:text-emerald-500">
+            <Link color="foreground" href="#" passHref={true} onClick={scrollToContact} className="text-white hover:text-emerald-500">
               Contacto
             </Link>
           </NavbarItem>
@@ -120,7 +120,8 @@ const NavBarMenu = () => {
             <Link
               color="white"
               className="w-full"
-              href="#"
+              href="#" 
+              passHref={true}
               size="lg"
               onClick={scrollToContact}
             >

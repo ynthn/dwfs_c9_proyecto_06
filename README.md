@@ -16,7 +16,7 @@ Este proyecto consta de la construcción de tu perfil profesional con respecto a
 * -URL hacia el demo online (en caso de que exista)
 * -Descripción de los proyectos
 
-URL FINAL: 
+URL FINAL: https://zingy-genie-c6e40c.netlify.app/
 
 ## 2. Tecnologías utilizadas
 * -HTML 5
