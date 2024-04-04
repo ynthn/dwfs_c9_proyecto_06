@@ -21,9 +21,25 @@
     text-transform: uppercase !important;
 }
 
+/**
+*BANNER
+*/
+.banner-video{
+    position: absolute;
+    object-fit: cover;
+    object-position: left top;
+    width: 100%;
+    min-height: 500px;
+    height: 80%;
+    top: 120px;
+    left: 0px;
+    z-index: -1;
+}
 
 
-
+/**
+*FOOTER
+*/
 .bg-footer {
     background-color: #0a314a;
 }
